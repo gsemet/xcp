@@ -1,0 +1,17 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+before_script:
+  - ./configure 
+  
+branches:
+  only:
+    - master
+	
+notifications:
+  recipients:
+    - gaetan@xeberon.net
+  email:
+    on_success: change
+    on_failure: always
