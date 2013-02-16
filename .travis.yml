@@ -5,6 +5,8 @@ compiler:
 before_script:
   - ./configure 
   
+script: scons
+  
 branches:
   only:
     - master
